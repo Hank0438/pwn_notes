@@ -1,0 +1,1318 @@
+[
+  {
+    "_index": "packets-2020-07-30",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\Device\\NPF_{1328BFE6-F4FD-450D-8C1E-D060B0867D84}",
+            "frame.interface_description": "Wi-Fi"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul 30, 2020 20:52:26.399942000 台北標準時間",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1596113546.399942000",
+          "frame.time_delta": "0.490391000",
+          "frame.time_delta_displayed": "0.000000000",
+          "frame.time_relative": "18.143178000",
+          "frame.number": "1663",
+          "frame.len": "66",
+          "frame.cap_len": "66",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp",
+          "frame.coloring_rule.name": "TCP SYN/FIN",
+          "frame.coloring_rule.string": "tcp.flags & 0x02 || tcp.flags.fin == 1"
+        },
+        "eth": {
+          "eth.dst": "40:b0:76:ba:29:9c",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "ASUSTekC_ba:29:9c",
+            "eth.dst.oui": "4239478",
+            "eth.dst.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.addr": "40:b0:76:ba:29:9c",
+            "eth.addr_resolved": "ASUSTekC_ba:29:9c",
+            "eth.addr.oui": "4239478",
+            "eth.addr.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "40:23:43:61:4a:cd",
+          "eth.src_tree": {
+            "eth.src_resolved": "Chongqin_61:4a:cd",
+            "eth.src.oui": "4203331",
+            "eth.src.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.addr": "40:23:43:61:4a:cd",
+            "eth.addr_resolved": "Chongqin_61:4a:cd",
+            "eth.addr.oui": "4203331",
+            "eth.addr.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "52",
+          "ip.id": "0x000010e3",
+          "ip.flags": "0x00004000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "128",
+          "ip.proto": "6",
+          "ip.checksum": "0x0000f645",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.43.217",
+          "ip.addr": "192.168.43.217",
+          "ip.src_host": "192.168.43.217",
+          "ip.host": "192.168.43.217",
+          "ip.dst": "139.162.123.119",
+          "ip.addr": "139.162.123.119",
+          "ip.dst_host": "139.162.123.119",
+          "ip.host": "139.162.123.119"
+        },
+        "tcp": {
+          "tcp.srcport": "52473",
+          "tcp.dstport": "10002",
+          "tcp.port": "52473",
+          "tcp.port": "10002",
+          "tcp.stream": "20",
+          "tcp.len": "0",
+          "tcp.seq": "0",
+          "tcp.seq_raw": "3972738013",
+          "tcp.nxtseq": "1",
+          "tcp.ack": "0",
+          "tcp.ack_raw": "0",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000002",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "1",
+            "tcp.flags.syn_tree": {
+              "_ws.expert": {
+                "tcp.connection.syn": "",
+                "_ws.expert.message": "Connection establish request (SYN): server port 10002",
+                "_ws.expert.severity": "2097152",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "··········S·"
+          },
+          "tcp.window_size_value": "64240",
+          "tcp.window_size": "64240",
+          "tcp.checksum": "0x000073cf",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "02:04:05:b4:01:03:03:08:01:01:04:02",
+          "tcp.options_tree": {
+            "tcp.options.mss": "02:04:05:b4",
+            "tcp.options.mss_tree": {
+              "tcp.option_kind": "2",
+              "tcp.option_len": "4",
+              "tcp.options.mss_val": "1460"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.wscale": "03:03:08",
+            "tcp.options.wscale_tree": {
+              "tcp.option_kind": "3",
+              "tcp.option_len": "3",
+              "tcp.options.wscale.shift": "8",
+              "tcp.options.wscale.multiplier": "256"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.sack_perm": "04:02",
+            "tcp.options.sack_perm_tree": {
+              "tcp.option_kind": "4",
+              "tcp.option_len": "2"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000000000",
+            "tcp.time_delta": "0.000000000"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2020-07-30",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\Device\\NPF_{1328BFE6-F4FD-450D-8C1E-D060B0867D84}",
+            "frame.interface_description": "Wi-Fi"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul 30, 2020 20:52:26.504167000 台北標準時間",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1596113546.504167000",
+          "frame.time_delta": "0.104225000",
+          "frame.time_delta_displayed": "0.104225000",
+          "frame.time_relative": "18.247403000",
+          "frame.number": "1664",
+          "frame.len": "66",
+          "frame.cap_len": "66",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp",
+          "frame.coloring_rule.name": "TCP SYN/FIN",
+          "frame.coloring_rule.string": "tcp.flags & 0x02 || tcp.flags.fin == 1"
+        },
+        "eth": {
+          "eth.dst": "40:23:43:61:4a:cd",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Chongqin_61:4a:cd",
+            "eth.dst.oui": "4203331",
+            "eth.dst.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.addr": "40:23:43:61:4a:cd",
+            "eth.addr_resolved": "Chongqin_61:4a:cd",
+            "eth.addr.oui": "4203331",
+            "eth.addr.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "40:b0:76:ba:29:9c",
+          "eth.src_tree": {
+            "eth.src_resolved": "ASUSTekC_ba:29:9c",
+            "eth.src.oui": "4239478",
+            "eth.src.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.addr": "40:b0:76:ba:29:9c",
+            "eth.addr_resolved": "ASUSTekC_ba:29:9c",
+            "eth.addr.oui": "4239478",
+            "eth.addr.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "52",
+          "ip.id": "0x00000000",
+          "ip.flags": "0x00004000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "50",
+          "ip.proto": "6",
+          "ip.checksum": "0x00005529",
+          "ip.checksum.status": "2",
+          "ip.src": "139.162.123.119",
+          "ip.addr": "139.162.123.119",
+          "ip.src_host": "139.162.123.119",
+          "ip.host": "139.162.123.119",
+          "ip.dst": "192.168.43.217",
+          "ip.addr": "192.168.43.217",
+          "ip.dst_host": "192.168.43.217",
+          "ip.host": "192.168.43.217"
+        },
+        "tcp": {
+          "tcp.srcport": "10002",
+          "tcp.dstport": "52473",
+          "tcp.port": "10002",
+          "tcp.port": "52473",
+          "tcp.stream": "20",
+          "tcp.len": "0",
+          "tcp.seq": "0",
+          "tcp.seq_raw": "2795231889",
+          "tcp.nxtseq": "1",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "3972738014",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000012",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "0",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "1",
+            "tcp.flags.syn_tree": {
+              "_ws.expert": {
+                "tcp.connection.sack": "",
+                "_ws.expert.message": "Connection establish acknowledge (SYN+ACK): server port 10002",
+                "_ws.expert.severity": "2097152",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······A··S·"
+          },
+          "tcp.window_size_value": "29200",
+          "tcp.window_size": "29200",
+          "tcp.checksum": "0x00007b72",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "02:04:05:b4:01:01:04:02:01:03:03:07",
+          "tcp.options_tree": {
+            "tcp.options.mss": "02:04:05:b4",
+            "tcp.options.mss_tree": {
+              "tcp.option_kind": "2",
+              "tcp.option_len": "4",
+              "tcp.options.mss_val": "1460"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.sack_perm": "04:02",
+            "tcp.options.sack_perm_tree": {
+              "tcp.option_kind": "4",
+              "tcp.option_len": "2"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.wscale": "03:03:07",
+            "tcp.options.wscale_tree": {
+              "tcp.option_kind": "3",
+              "tcp.option_len": "3",
+              "tcp.options.wscale.shift": "7",
+              "tcp.options.wscale.multiplier": "128"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.acks_frame": "1663",
+            "tcp.analysis.ack_rtt": "0.104225000",
+            "tcp.analysis.initial_rtt": "0.104423000"
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.104225000",
+            "tcp.time_delta": "0.104225000"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2020-07-30",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\Device\\NPF_{1328BFE6-F4FD-450D-8C1E-D060B0867D84}",
+            "frame.interface_description": "Wi-Fi"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul 30, 2020 20:52:26.504365000 台北標準時間",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1596113546.504365000",
+          "frame.time_delta": "0.000198000",
+          "frame.time_delta_displayed": "0.000198000",
+          "frame.time_relative": "18.247601000",
+          "frame.number": "1665",
+          "frame.len": "54",
+          "frame.cap_len": "54",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "40:b0:76:ba:29:9c",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "ASUSTekC_ba:29:9c",
+            "eth.dst.oui": "4239478",
+            "eth.dst.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.addr": "40:b0:76:ba:29:9c",
+            "eth.addr_resolved": "ASUSTekC_ba:29:9c",
+            "eth.addr.oui": "4239478",
+            "eth.addr.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "40:23:43:61:4a:cd",
+          "eth.src_tree": {
+            "eth.src_resolved": "Chongqin_61:4a:cd",
+            "eth.src.oui": "4203331",
+            "eth.src.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.addr": "40:23:43:61:4a:cd",
+            "eth.addr_resolved": "Chongqin_61:4a:cd",
+            "eth.addr.oui": "4203331",
+            "eth.addr.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "40",
+          "ip.id": "0x000010e4",
+          "ip.flags": "0x00004000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "128",
+          "ip.proto": "6",
+          "ip.checksum": "0x0000f650",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.43.217",
+          "ip.addr": "192.168.43.217",
+          "ip.src_host": "192.168.43.217",
+          "ip.host": "192.168.43.217",
+          "ip.dst": "139.162.123.119",
+          "ip.addr": "139.162.123.119",
+          "ip.dst_host": "139.162.123.119",
+          "ip.host": "139.162.123.119"
+        },
+        "tcp": {
+          "tcp.srcport": "52473",
+          "tcp.dstport": "10002",
+          "tcp.port": "52473",
+          "tcp.port": "10002",
+          "tcp.stream": "20",
+          "tcp.len": "0",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "3972738014",
+          "tcp.nxtseq": "1",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2795231890",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x00000010",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "0",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······A····"
+          },
+          "tcp.window_size_value": "256",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "256",
+          "tcp.checksum": "0x00002d55",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.analysis": {
+            "tcp.analysis.acks_frame": "1664",
+            "tcp.analysis.ack_rtt": "0.000198000",
+            "tcp.analysis.initial_rtt": "0.104423000"
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.104423000",
+            "tcp.time_delta": "0.000198000"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2020-07-30",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\Device\\NPF_{1328BFE6-F4FD-450D-8C1E-D060B0867D84}",
+            "frame.interface_description": "Wi-Fi"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul 30, 2020 20:52:26.504540000 台北標準時間",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1596113546.504540000",
+          "frame.time_delta": "0.000175000",
+          "frame.time_delta_displayed": "0.000175000",
+          "frame.time_relative": "18.247776000",
+          "frame.number": "1666",
+          "frame.len": "84",
+          "frame.cap_len": "84",
+          "frame.marked": "1",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "40:b0:76:ba:29:9c",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "ASUSTekC_ba:29:9c",
+            "eth.dst.oui": "4239478",
+            "eth.dst.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.addr": "40:b0:76:ba:29:9c",
+            "eth.addr_resolved": "ASUSTekC_ba:29:9c",
+            "eth.addr.oui": "4239478",
+            "eth.addr.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "40:23:43:61:4a:cd",
+          "eth.src_tree": {
+            "eth.src_resolved": "Chongqin_61:4a:cd",
+            "eth.src.oui": "4203331",
+            "eth.src.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.addr": "40:23:43:61:4a:cd",
+            "eth.addr_resolved": "Chongqin_61:4a:cd",
+            "eth.addr.oui": "4203331",
+            "eth.addr.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "70",
+          "ip.id": "0x000010e5",
+          "ip.flags": "0x00004000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "128",
+          "ip.proto": "6",
+          "ip.checksum": "0x0000f631",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.43.217",
+          "ip.addr": "192.168.43.217",
+          "ip.src_host": "192.168.43.217",
+          "ip.host": "192.168.43.217",
+          "ip.dst": "139.162.123.119",
+          "ip.addr": "139.162.123.119",
+          "ip.dst_host": "139.162.123.119",
+          "ip.host": "139.162.123.119"
+        },
+        "tcp": {
+          "tcp.srcport": "52473",
+          "tcp.dstport": "10002",
+          "tcp.port": "52473",
+          "tcp.port": "10002",
+          "tcp.stream": "20",
+          "tcp.len": "30",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "3972738014",
+          "tcp.nxtseq": "31",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2795231890",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "256",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "256",
+          "tcp.checksum": "0x00004e72",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.104423000",
+            "tcp.analysis.bytes_in_flight": "30",
+            "tcp.analysis.push_bytes_sent": "30"
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.104598000",
+            "tcp.time_delta": "0.000175000"
+          },
+          "tcp.payload": "00:04:00:01:00:00:00:00:00:00:00:0e:00:00:00:00:01:0c:00:00:40:00:00:00:00:00:ef:be:ad:de"
+        },
+        "data": {
+          "data.data": "00:04:00:01:00:00:00:00:00:00:00:0e:00:00:00:00:01:0c:00:00:40:00:00:00:00:00:ef:be:ad:de",
+          "data.len": "30"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2020-07-30",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\Device\\NPF_{1328BFE6-F4FD-450D-8C1E-D060B0867D84}",
+            "frame.interface_description": "Wi-Fi"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul 30, 2020 20:52:26.598113000 台北標準時間",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1596113546.598113000",
+          "frame.time_delta": "0.093573000",
+          "frame.time_delta_displayed": "0.093573000",
+          "frame.time_relative": "18.341349000",
+          "frame.number": "1667",
+          "frame.len": "54",
+          "frame.cap_len": "54",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "40:23:43:61:4a:cd",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Chongqin_61:4a:cd",
+            "eth.dst.oui": "4203331",
+            "eth.dst.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.addr": "40:23:43:61:4a:cd",
+            "eth.addr_resolved": "Chongqin_61:4a:cd",
+            "eth.addr.oui": "4203331",
+            "eth.addr.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "40:b0:76:ba:29:9c",
+          "eth.src_tree": {
+            "eth.src_resolved": "ASUSTekC_ba:29:9c",
+            "eth.src.oui": "4239478",
+            "eth.src.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.addr": "40:b0:76:ba:29:9c",
+            "eth.addr_resolved": "ASUSTekC_ba:29:9c",
+            "eth.addr.oui": "4239478",
+            "eth.addr.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "40",
+          "ip.id": "0x0000e2d2",
+          "ip.flags": "0x00004000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "50",
+          "ip.proto": "6",
+          "ip.checksum": "0x00007262",
+          "ip.checksum.status": "2",
+          "ip.src": "139.162.123.119",
+          "ip.addr": "139.162.123.119",
+          "ip.src_host": "139.162.123.119",
+          "ip.host": "139.162.123.119",
+          "ip.dst": "192.168.43.217",
+          "ip.addr": "192.168.43.217",
+          "ip.dst_host": "192.168.43.217",
+          "ip.host": "192.168.43.217"
+        },
+        "tcp": {
+          "tcp.srcport": "10002",
+          "tcp.dstport": "52473",
+          "tcp.port": "10002",
+          "tcp.port": "52473",
+          "tcp.stream": "20",
+          "tcp.len": "0",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2795231890",
+          "tcp.nxtseq": "1",
+          "tcp.ack": "31",
+          "tcp.ack_raw": "3972738044",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x00000010",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "0",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······A····"
+          },
+          "tcp.window_size_value": "229",
+          "tcp.window_size": "29312",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x00002d52",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.analysis": {
+            "tcp.analysis.acks_frame": "1666",
+            "tcp.analysis.ack_rtt": "0.093573000",
+            "tcp.analysis.initial_rtt": "0.104423000"
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.198171000",
+            "tcp.time_delta": "0.093573000"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2020-07-30",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\Device\\NPF_{1328BFE6-F4FD-450D-8C1E-D060B0867D84}",
+            "frame.interface_description": "Wi-Fi"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul 30, 2020 20:52:26.598184000 台北標準時間",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1596113546.598184000",
+          "frame.time_delta": "0.000071000",
+          "frame.time_delta_displayed": "0.000071000",
+          "frame.time_relative": "18.341420000",
+          "frame.number": "1668",
+          "frame.len": "82",
+          "frame.cap_len": "82",
+          "frame.marked": "1",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "40:23:43:61:4a:cd",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Chongqin_61:4a:cd",
+            "eth.dst.oui": "4203331",
+            "eth.dst.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.addr": "40:23:43:61:4a:cd",
+            "eth.addr_resolved": "Chongqin_61:4a:cd",
+            "eth.addr.oui": "4203331",
+            "eth.addr.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "40:b0:76:ba:29:9c",
+          "eth.src_tree": {
+            "eth.src_resolved": "ASUSTekC_ba:29:9c",
+            "eth.src.oui": "4239478",
+            "eth.src.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.addr": "40:b0:76:ba:29:9c",
+            "eth.addr_resolved": "ASUSTekC_ba:29:9c",
+            "eth.addr.oui": "4239478",
+            "eth.addr.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "68",
+          "ip.id": "0x0000e2d3",
+          "ip.flags": "0x00004000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "50",
+          "ip.proto": "6",
+          "ip.checksum": "0x00007245",
+          "ip.checksum.status": "2",
+          "ip.src": "139.162.123.119",
+          "ip.addr": "139.162.123.119",
+          "ip.src_host": "139.162.123.119",
+          "ip.host": "139.162.123.119",
+          "ip.dst": "192.168.43.217",
+          "ip.addr": "192.168.43.217",
+          "ip.dst_host": "192.168.43.217",
+          "ip.host": "192.168.43.217"
+        },
+        "tcp": {
+          "tcp.srcport": "10002",
+          "tcp.dstport": "52473",
+          "tcp.port": "10002",
+          "tcp.port": "52473",
+          "tcp.stream": "20",
+          "tcp.len": "28",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2795231890",
+          "tcp.nxtseq": "29",
+          "tcp.ack": "31",
+          "tcp.ack_raw": "3972738044",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "229",
+          "tcp.window_size": "29312",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x00008bf7",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.104423000",
+            "tcp.analysis.bytes_in_flight": "28",
+            "tcp.analysis.push_bytes_sent": "28"
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.198242000",
+            "tcp.time_delta": "0.000071000"
+          },
+          "tcp.payload": "01:04:00:01:00:00:00:00:00:00:00:0c:00:00:00:00:00:04:de:ad:be:ef:02:04:00:00:00:80"
+        },
+        "data": {
+          "data.data": "01:04:00:01:00:00:00:00:00:00:00:0c:00:00:00:00:00:04:de:ad:be:ef:02:04:00:00:00:80",
+          "data.len": "28"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2020-07-30",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\Device\\NPF_{1328BFE6-F4FD-450D-8C1E-D060B0867D84}",
+            "frame.interface_description": "Wi-Fi"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul 30, 2020 20:52:26.600126000 台北標準時間",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1596113546.600126000",
+          "frame.time_delta": "0.001942000",
+          "frame.time_delta_displayed": "0.001942000",
+          "frame.time_relative": "18.343362000",
+          "frame.number": "1669",
+          "frame.len": "54",
+          "frame.cap_len": "54",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp",
+          "frame.coloring_rule.name": "TCP SYN/FIN",
+          "frame.coloring_rule.string": "tcp.flags & 0x02 || tcp.flags.fin == 1"
+        },
+        "eth": {
+          "eth.dst": "40:b0:76:ba:29:9c",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "ASUSTekC_ba:29:9c",
+            "eth.dst.oui": "4239478",
+            "eth.dst.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.addr": "40:b0:76:ba:29:9c",
+            "eth.addr_resolved": "ASUSTekC_ba:29:9c",
+            "eth.addr.oui": "4239478",
+            "eth.addr.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "40:23:43:61:4a:cd",
+          "eth.src_tree": {
+            "eth.src_resolved": "Chongqin_61:4a:cd",
+            "eth.src.oui": "4203331",
+            "eth.src.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.addr": "40:23:43:61:4a:cd",
+            "eth.addr_resolved": "Chongqin_61:4a:cd",
+            "eth.addr.oui": "4203331",
+            "eth.addr.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "40",
+          "ip.id": "0x000010e6",
+          "ip.flags": "0x00004000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "128",
+          "ip.proto": "6",
+          "ip.checksum": "0x0000f64e",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.43.217",
+          "ip.addr": "192.168.43.217",
+          "ip.src_host": "192.168.43.217",
+          "ip.host": "192.168.43.217",
+          "ip.dst": "139.162.123.119",
+          "ip.addr": "139.162.123.119",
+          "ip.dst_host": "139.162.123.119",
+          "ip.host": "139.162.123.119"
+        },
+        "tcp": {
+          "tcp.srcport": "52473",
+          "tcp.dstport": "10002",
+          "tcp.port": "52473",
+          "tcp.port": "10002",
+          "tcp.stream": "20",
+          "tcp.len": "0",
+          "tcp.seq": "31",
+          "tcp.seq_raw": "3972738044",
+          "tcp.nxtseq": "32",
+          "tcp.ack": "29",
+          "tcp.ack_raw": "2795231918",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x00000011",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "0",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "1",
+            "tcp.flags.fin_tree": {
+              "_ws.expert": {
+                "tcp.connection.fin": "",
+                "_ws.expert.message": "Connection finish (FIN)",
+                "_ws.expert.severity": "2097152",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "tcp.flags.str": "·······A···F"
+          },
+          "tcp.window_size_value": "256",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "256",
+          "tcp.checksum": "0x00002d1a",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.analysis": {
+            "tcp.analysis.acks_frame": "1668",
+            "tcp.analysis.ack_rtt": "0.001942000",
+            "tcp.analysis.initial_rtt": "0.104423000"
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.200184000",
+            "tcp.time_delta": "0.001942000"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2020-07-30",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\Device\\NPF_{1328BFE6-F4FD-450D-8C1E-D060B0867D84}",
+            "frame.interface_description": "Wi-Fi"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul 30, 2020 20:52:26.679255000 台北標準時間",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1596113546.679255000",
+          "frame.time_delta": "0.079129000",
+          "frame.time_delta_displayed": "0.079129000",
+          "frame.time_relative": "18.422491000",
+          "frame.number": "1670",
+          "frame.len": "54",
+          "frame.cap_len": "54",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp",
+          "frame.coloring_rule.name": "TCP SYN/FIN",
+          "frame.coloring_rule.string": "tcp.flags & 0x02 || tcp.flags.fin == 1"
+        },
+        "eth": {
+          "eth.dst": "40:23:43:61:4a:cd",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Chongqin_61:4a:cd",
+            "eth.dst.oui": "4203331",
+            "eth.dst.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.addr": "40:23:43:61:4a:cd",
+            "eth.addr_resolved": "Chongqin_61:4a:cd",
+            "eth.addr.oui": "4203331",
+            "eth.addr.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "40:b0:76:ba:29:9c",
+          "eth.src_tree": {
+            "eth.src_resolved": "ASUSTekC_ba:29:9c",
+            "eth.src.oui": "4239478",
+            "eth.src.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.addr": "40:b0:76:ba:29:9c",
+            "eth.addr_resolved": "ASUSTekC_ba:29:9c",
+            "eth.addr.oui": "4239478",
+            "eth.addr.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "40",
+          "ip.id": "0x0000e2d4",
+          "ip.flags": "0x00004000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "50",
+          "ip.proto": "6",
+          "ip.checksum": "0x00007260",
+          "ip.checksum.status": "2",
+          "ip.src": "139.162.123.119",
+          "ip.addr": "139.162.123.119",
+          "ip.src_host": "139.162.123.119",
+          "ip.host": "139.162.123.119",
+          "ip.dst": "192.168.43.217",
+          "ip.addr": "192.168.43.217",
+          "ip.dst_host": "192.168.43.217",
+          "ip.host": "192.168.43.217"
+        },
+        "tcp": {
+          "tcp.srcport": "10002",
+          "tcp.dstport": "52473",
+          "tcp.port": "10002",
+          "tcp.port": "52473",
+          "tcp.stream": "20",
+          "tcp.len": "0",
+          "tcp.seq": "29",
+          "tcp.seq_raw": "2795231918",
+          "tcp.nxtseq": "30",
+          "tcp.ack": "32",
+          "tcp.ack_raw": "3972738045",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x00000011",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "0",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "1",
+            "tcp.flags.fin_tree": {
+              "_ws.expert": {
+                "tcp.connection.fin": "",
+                "_ws.expert.message": "Connection finish (FIN)",
+                "_ws.expert.severity": "2097152",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "tcp.flags.str": "·······A···F"
+          },
+          "tcp.window_size_value": "229",
+          "tcp.window_size": "29312",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x00002d34",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.analysis": {
+            "tcp.analysis.acks_frame": "1669",
+            "tcp.analysis.ack_rtt": "0.079129000",
+            "tcp.analysis.initial_rtt": "0.104423000"
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.279313000",
+            "tcp.time_delta": "0.079129000"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2020-07-30",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\Device\\NPF_{1328BFE6-F4FD-450D-8C1E-D060B0867D84}",
+            "frame.interface_description": "Wi-Fi"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul 30, 2020 20:52:26.679372000 台北標準時間",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1596113546.679372000",
+          "frame.time_delta": "0.000117000",
+          "frame.time_delta_displayed": "0.000117000",
+          "frame.time_relative": "18.422608000",
+          "frame.number": "1671",
+          "frame.len": "54",
+          "frame.cap_len": "54",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "40:b0:76:ba:29:9c",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "ASUSTekC_ba:29:9c",
+            "eth.dst.oui": "4239478",
+            "eth.dst.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.addr": "40:b0:76:ba:29:9c",
+            "eth.addr_resolved": "ASUSTekC_ba:29:9c",
+            "eth.addr.oui": "4239478",
+            "eth.addr.oui_resolved": "ASUSTek COMPUTER INC.",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "40:23:43:61:4a:cd",
+          "eth.src_tree": {
+            "eth.src_resolved": "Chongqin_61:4a:cd",
+            "eth.src.oui": "4203331",
+            "eth.src.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.addr": "40:23:43:61:4a:cd",
+            "eth.addr_resolved": "Chongqin_61:4a:cd",
+            "eth.addr.oui": "4203331",
+            "eth.addr.oui_resolved": "Chongqing Fugui Electronics Co.,Ltd.",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "40",
+          "ip.id": "0x000010e7",
+          "ip.flags": "0x00004000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "128",
+          "ip.proto": "6",
+          "ip.checksum": "0x0000f64d",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.43.217",
+          "ip.addr": "192.168.43.217",
+          "ip.src_host": "192.168.43.217",
+          "ip.host": "192.168.43.217",
+          "ip.dst": "139.162.123.119",
+          "ip.addr": "139.162.123.119",
+          "ip.dst_host": "139.162.123.119",
+          "ip.host": "139.162.123.119"
+        },
+        "tcp": {
+          "tcp.srcport": "52473",
+          "tcp.dstport": "10002",
+          "tcp.port": "52473",
+          "tcp.port": "10002",
+          "tcp.stream": "20",
+          "tcp.len": "0",
+          "tcp.seq": "32",
+          "tcp.seq_raw": "3972738045",
+          "tcp.nxtseq": "32",
+          "tcp.ack": "30",
+          "tcp.ack_raw": "2795231919",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x00000010",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "0",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······A····"
+          },
+          "tcp.window_size_value": "256",
+          "tcp.window_size": "65536",
+          "tcp.window_size_scalefactor": "256",
+          "tcp.checksum": "0x00002d19",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.analysis": {
+            "tcp.analysis.acks_frame": "1670",
+            "tcp.analysis.ack_rtt": "0.000117000",
+            "tcp.analysis.initial_rtt": "0.104423000"
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.279430000",
+            "tcp.time_delta": "0.000117000"
+          }
+        }
+      }
+    }
+  }
+]
