@@ -1,7 +1,8 @@
 # pwn_notes
 This is a note and POC for some basic pwn technique. 
 
-
+## Userland
+### Exploit
 | Technique | Description | Linux | Windows | 
 | -------- | -------- | -------- | -------- |
 | Buffer Overflow     |      |      |      |
@@ -11,16 +12,52 @@ This is a note and POC for some basic pwn technique.
 | Stack Pivot     |      |      |      |
 | Format String     |      |      |      |
 | File Descripter Structure |      |      |      |
-| Heap Exploit     |      |      |      |
+
+### Heap Exploit
+* UNIX-liked
+  * ptmalloc
+  * jemalloc
+  * tcmalloc
+* WINDOWS
+  * segement heap
+  * NT heap
 
 
-## Windows V.S Linux
-* Linux
-  PIE, libc_base
-* Windows
-  image_base, dll_image_base
+### Protection
+* UNIX-liked
+  * NX
+  * PIE
+  * ASLR
+  * RELRO
+    * FULL:     
+    * PARTIAL:  GOT can write
+    * DISABLE:  
+  * CANARY: STACK smash detect
+  * FORTIFY
+* WINDOWS
+  * DEP
+  * CFG
+  * Authenticode
+### Information Leak
+* UNIX-liked
+  * PIE
+  * ASLR
+    * stack_addr
+    * libc_base -> libc_function_offset
+* WINDOWS
+  * image_base
+  * dll_image_base -> dll_export_function_offset
+
+## Kernel
+* UNIX-liked
+* WINDOWS
+  * token stealing
 
 ## Scripts
 
-## pwnable.tw Writeups
+## Writeups
+* UNIX-liked
+  * pwnable.tw
+* WINDOWS
+  * HEVD
 
