@@ -1,5 +1,2 @@
-break parse_expr
-break eval
-break *0x00000000080493b9
-break *0x00000000080493ed
+break main
 

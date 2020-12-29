@@ -1,0 +1,7 @@
+break main
+break * 0x80489af
+break * 0x80489bd
+break *0x80488ad
+break *0x80489cf
+break *0x8048a19
+
