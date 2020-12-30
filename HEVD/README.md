@@ -24,11 +24,16 @@
 ### Debuggee
 In order to install unsigned driver, set Windows OS to test-mode 
 ```
+PS> bcdedit /set testsigning on
 PS> bcdedit /debug on
 ```
 Setup debugger information and retrieve the key
 ```
 PS> bcdedit /dbgsettings NET HOSTIP:192.168.56.102 PORT:50000
+```
+Setup debug through which network interface
+```
+PS> bcdedit /set "{dbgsettings}" busparams b.d.f
 ```
 Show up the debug setting
 ```
@@ -36,9 +41,8 @@ PS> bcdedit /dbgsettings
 ```
 
 ### Debugger
-:::info
-WinDBG Preview is available on Microsoft Store 
-:::
+
+* WinDBG Preview is available on Microsoft Store 
 WinDBG Preview -> File -> Attach To Kernel -> Net
 
 
