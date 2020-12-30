@@ -16,9 +16,9 @@
 ## Windows Kernel Debugging
 * The host and guset both are Windows 10 VM.
 * The network interface is Virtual Box Host-Only Ethernet Adapter
-* Debugger: 192.168.56.101
-* Debuggee: 192.168.56.102
-* Picture from www.nakivo.com
+* Debuggee: 192.168.56.101
+* Debugger: 192.168.56.102
+* Nice picture from www.nakivo.com
 ![](https://www.nakivo.com/blog/wp-content/uploads/2019/07/VirtualBox-network-settings-%E2%80%93-VMs-use-the-host-only-network.png)
 
 ### Debuggee
@@ -44,6 +44,7 @@ PS> bcdedit /dbgsettings
 
 * WinDBG Preview is available on Microsoft Store 
 WinDBG Preview -> File -> Attach To Kernel -> Net
+![](https://i.imgur.com/qeyxOCV.png)
 
 
 
