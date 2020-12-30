@@ -1,17 +1,20 @@
 # HEVD writeups 
 
-| Done | Vulnerability | Exploits | 
-| ---- | ------------- | -------- |
-|  | Pool Overflow |  |
-|  | Use After Free |  |
-|  | Stack Overflow |  |
-|  | Type Confusion |  |
-|  | Integer Overflow |  |
-|  | Stack Overflow GS |  |
-|  | Uninitialized Variable |  |
-|  | Null Pointer Dereference |  |
-|  | Arbitary Memory Overwrite |  |
-|  | HackSys Extreme Vulnerable |  |
+## HEVD exploits
+| Done | Vulnerability | x86 Exploit | x64 Exploit | 
+| ---- | ------------- | -------- | -------- |
+|  | Pool Overflow |  |  |
+|  | Use After Free |  |  |
+|  | Stack Overflow |  |  |
+|  | Type Confusion |  |  |
+|  | Integer Overflow |  |  |
+|  | Stack Overflow GS |  |  |
+|  | Uninitialized Variable |  |  |
+|  | Null Pointer Dereference |  |  |
+|  | Arbitary Memory Overwrite |  |  |
+|  | HackSys Extreme Vulnerable |  |  |
+
+* x64 exploit should bypass SMEP (Supervisor Mode Execution Prevention)
 
 ### Exploit Reference
 
@@ -52,6 +55,13 @@ PS> bcdedit /dbgsettings
 * WinDBG Preview is available on Microsoft Store 
 WinDBG Preview -> File -> Attach To Kernel -> Net
 ![](https://i.imgur.com/sfsPmP9.png)
+
+* Configure kernel symbols
+Settings -> Debugging settings
+```
+srv*c:\symbols*https://msdl.microsoft.com/download/symbols
+```
+![](https://i.imgur.com/knOb3WI.png)
 
 
 ### Debug Reference
