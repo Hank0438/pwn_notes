@@ -51,7 +51,8 @@ PS> bcdedit /dbgsettings
 
 * WinDBG Preview is available on Microsoft Store 
 WinDBG Preview -> File -> Attach To Kernel -> Net
-![](https://i.imgur.com/qeyxOCV.png)
+![](https://i.imgur.com/sfsPmP9.png)
+
 
 ### Debug Reference
 https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically
