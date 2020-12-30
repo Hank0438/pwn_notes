@@ -13,6 +13,10 @@
 |  | Arbitary Memory Overwrite |  |
 |  | HackSys Extreme Vulnerable |  |
 
+### Exploit Reference
+
+
+
 ## Windows Kernel Debugging
 * The host and guset both are Windows 10 VM.
 * The network interface is Virtual Box Host-Only Ethernet Adapter
@@ -32,13 +36,16 @@ Setup debugger information and retrieve the key
 PS> bcdedit /dbgsettings NET HOSTIP:192.168.56.102 PORT:50000
 ```
 Setup debug through which network interface
+Copy `VerifiedNICList.xml` and  `kdnet.exe` from host `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\` to guest 
 ```
-PS> bcdedit /set "{dbgsettings}" busparams b.d.f
+PS> kdnet.exe
+PS> bcdedit /set "{dbgsettings}" busparams b.d.f # choose the Virtual Box Host-Only Adapter
 ```
 Show up the debug setting
 ```
 PS> bcdedit /dbgsettings
 ```
+![](https://i.imgur.com/c0LPQNn.png)
 
 ### Debugger
 
@@ -46,7 +53,8 @@ PS> bcdedit /dbgsettings
 WinDBG Preview -> File -> Attach To Kernel -> Net
 ![](https://i.imgur.com/qeyxOCV.png)
 
-
+### Debug Reference
+https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically
 
 
 
