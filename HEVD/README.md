@@ -21,12 +21,17 @@
 
 
 ## Windows Kernel Debugging
-* The host and guset both are Windows 10 VM.
-* The network interface is Virtual Box Host-Only Ethernet Adapter
-* Debuggee: 192.168.56.101
-* Debugger: 192.168.56.102
-* Nice picture from www.nakivo.com
-![](https://www.nakivo.com/blog/wp-content/uploads/2019/07/VirtualBox-network-settings-%E2%80%93-VMs-use-the-host-only-network.png)
+
+* WinDbg cheatsheet
+    * https://github.com/repnz/windbg-cheat-sheet
+
+* Environment Setup
+    * The host and guset both are Windows 10 VM.
+    * The network interface is Virtual Box Host-Only Ethernet Adapter
+    * Debuggee: 192.168.56.101
+    * Debugger: 192.168.56.102
+    * Nice picture from www.nakivo.com
+    ![](https://www.nakivo.com/blog/wp-content/uploads/2019/07/VirtualBox-network-settings-%E2%80%93-VMs-use-the-host-only-network.png)
 
 ### Debuggee
 In order to install unsigned driver, set Windows OS to test-mode 
@@ -66,7 +71,7 @@ srv*c:\symbols*https://msdl.microsoft.com/download/symbols
 
 ### Debug Reference
 https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically
-
+https://medium.com/@ophirharpaz/kdnet-tutorial-for-noobs-68669778bbd4
 
 
 
