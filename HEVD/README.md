@@ -1,7 +1,7 @@
 # HEVD writeups 
 
 ## HEVD exploits
-* Windows 10 build 19041
+* Windows 10 x64 build 19041
 
 | Done | Vulnerability | x86 Exploit | x64 Exploit | 
 | ---- | ------------- | -------- | -------- |
@@ -10,11 +10,13 @@
 |  | Pool Overflow |  |  |
 |  | Use After Free |  |  |
 |  | Type Confusion |  |  |
-|  | Integer Overflow |  |  |
+|  | Integer Overflow |  | X |
 |  | Uninitialized Variable |  |  |
 |  | Null Pointer Dereference |  |  |
 |  | Arbitary Memory Overwrite |  |  |
 |  | HackSys Extreme Vulnerable |  |  |
+
+
 
 * [WinDBG Setup](https://hackmd.io/@hank0438/H17xTCLCv)
 
