@@ -16,7 +16,7 @@
 | v | BabyStack  | 250 |  |  |
 | v | Heap Paradise | 350 |  |  |
 | v | Secret Of My Heart | 400 |  |  |
-|  | applestore | 200 |  |  |
+| v | applestore | 200 |  |  |
 |  | Death Note | 250 |  |  |
 |  | Starbound| 250 |  |  |
 |  | Spirited Away | 300 |  |  |
@@ -24,6 +24,9 @@
 |  | Bounty Program alpha | 300 |  |  |
 |  | Bash | 200 |  |  |
 |  | critical heap | 200 |  |  |
+| v | unexploitable | 500 | buffer overflow | ROP |
+|  | deaslr | 500 | buffer overflow | ROP |
+
 
 
 
